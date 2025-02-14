@@ -1,0 +1,9 @@
+{
+  "name": "joinwrite-enduser",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/joinwrite-enduser/src",
+  "projectType": "application",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project joinwrite-enduser --web",
+  "targets": {}
+}
