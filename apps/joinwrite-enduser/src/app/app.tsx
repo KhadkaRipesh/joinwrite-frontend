@@ -1,13 +1,10 @@
-// Uncomment this line to use CSS modules
-// import styles from './app.module.scss';
-import NxWelcome from './nx-welcome';
+import { RouterProvider } from 'react-router-dom';
+import { mainRoutes } from '../routes/main.route';
+
+const routes = mainRoutes;
 
 export function App() {
-  return (
-    <div>
-      <NxWelcome title="joinwrite-enduser" />
-    </div>
-  );
+  return <RouterProvider router={routes} />;
 }
 
 export default App;
