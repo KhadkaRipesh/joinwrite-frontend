@@ -17,7 +17,6 @@ export const mainRoutes = createBrowserRouter([
     children: fullLayoutRoutes?.map((item) => ({
       path: item?.path,
       lazy: async () => {
-        console.log('Loading:', item.path);
         const ImportComponent = await item.component();
         return {
           Component: () => RouteWrapperComponent(ImportComponent),
@@ -28,7 +27,6 @@ export const mainRoutes = createBrowserRouter([
           return {
             path: child?.path,
             lazy: async () => {
-              console.log('Loading:', child.path);
               const ImportComponent = await child.component();
               return {
                 Component: ImportComponent,
