@@ -1,9 +1,9 @@
-import Test from '../../components/Sidebar';
+import { Outlet } from 'react-router-dom';
 
 const NotesHomePage = () => {
   return (
     <div>
-      <Test />
+      <p>This is a home page of Notes overview</p>
     </div>
   );
 };

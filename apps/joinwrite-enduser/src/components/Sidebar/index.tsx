@@ -1,16 +1,16 @@
 import { Menu, MenuItem, Sidebar } from 'react-pro-sidebar';
-const Test = () => {
+const NotesSideBar = () => {
   return (
     <div>
-      <Sidebar collapsed>
+      <Sidebar>
         <Menu>
-          <MenuItem>Test 1</MenuItem>
-          <MenuItem>Test 2</MenuItem>
-          <MenuItem>Test 3</MenuItem>
+          <MenuItem>My Notes</MenuItem>
+          <MenuItem>My History</MenuItem>
+          <MenuItem>My Profile</MenuItem>
         </Menu>
       </Sidebar>
     </div>
   );
 };
 
-export default Test;
+export default NotesSideBar;
